@@ -1,4 +1,4 @@
-package maillist
+package service
 
 import (
 	"github.com/jmoiron/sqlx"
