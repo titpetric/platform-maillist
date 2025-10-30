@@ -23,8 +23,6 @@ github.com/elastic/go-sysinfo v1.15.3/go.mod h1:K/cNrqYTDrSoMh2oDkYEMS2+a72GRxMv
 github.com/elastic/go-windows v1.0.0/go.mod h1:TsU0Nrp7/y3+VwE82FoZF8gC/XFg/Elz6CcloAxnPgU=
 github.com/elastic/go-windows v1.0.2 h1:yoLLsAsV5cfg9FLhZ9EXZ2n2sQFKeDYrHenkcivY4vI=
 github.com/elastic/go-windows v1.0.2/go.mod h1:bGcDpBzXgYSqM0Gx3DM4+UxFj300SZLixie9u9ixLM8=
-github.com/go-bridget/mig v0.0.0-20251026174127-165f4d50196e h1:+d0EDvD10OG7kPBaZRSK56DET5lSsVfIapIQjkcFG34=
-github.com/go-bridget/mig v0.0.0-20251026174127-165f4d50196e/go.mod h1:B3f67DhE3+H4bKdlRQB0F1/s7qMECXiLAsZ023DqtoI=
 github.com/go-bridget/mig v0.0.0-20251029152027-09763532d573 h1:Zmlm/LlwWSJ5h+Ll8W03R1eqaWHIq3Zmo5lYXuhGWJI=
 github.com/go-bridget/mig v0.0.0-20251029152027-09763532d573/go.mod h1:B3f67DhE3+H4bKdlRQB0F1/s7qMECXiLAsZ023DqtoI=
 github.com/go-chi/chi/v5 v5.2.2 h1:CMwsvRVTbXVytCk1Wd72Zy1LAsAh9GxMmSNWLHCG618=
@@ -167,8 +165,8 @@ github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.11.0 h1:ib4sjIrwZKxE5u/Japgo/7SJV3PvgjGiRNAvTVGqQl8=
 github.com/stretchr/testify v1.11.0/go.mod h1:wZwfW3scLgRK+23gO65QZefKpKQRnfz6sD981Nm4B6U=
-github.com/titpetric/platform v0.0.0-20251029141404-f71243fb19da h1:ufL3BrXqxsVc1Chd1doTaNej7EkURZpET+t/KBNmbpQ=
-github.com/titpetric/platform v0.0.0-20251029141404-f71243fb19da/go.mod h1:2Z64Ox7TLMRiIa8mdIp2Xsn09bjgBDhfGFWFpCLCyA4=
+github.com/titpetric/platform v0.0.0-20251030181022-d71454786a31 h1:j8WoyxtjFrMDXw9R8LBWKHaO2SCF9UiHjB8SYFTPauE=
+github.com/titpetric/platform v0.0.0-20251030181022-d71454786a31/go.mod h1:2Z64Ox7TLMRiIa8mdIp2Xsn09bjgBDhfGFWFpCLCyA4=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=
 go.elastic.co/apm v1.15.0 h1:uPk2g/whK7c7XiZyz/YCUnAUBNPiyNeE3ARX3G6Gx7Q=

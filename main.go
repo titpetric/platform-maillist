@@ -18,9 +18,9 @@ import (
 
 func main() {
 	// Register common middleware.
-	platform.AddMiddleware(middleware.Logger)
+	platform.Use(middleware.Logger)
 
-	platform.AddModule(service.NewMailList())
+	platform.Register(service.NewMailList())
 
 	if err := start(); err != nil {
 		log.Fatalf("exit error: %v", err)

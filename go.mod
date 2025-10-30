@@ -8,7 +8,7 @@ require (
 	github.com/go-sql-driver/mysql v1.9.3
 	github.com/jackc/pgx/v5 v5.7.5
 	github.com/jmoiron/sqlx v1.4.0
-	github.com/titpetric/platform v0.0.0-20251029141404-f71243fb19da
+	github.com/titpetric/platform v0.0.0-20251030181022-d71454786a31
 	modernc.org/sqlite v1.38.2
 )
 

@@ -17,7 +17,12 @@ func (*MailList) Name() string {
 	return "maillist"
 }
 
-func (*MailList) Close() {
+func (*MailList) Start() error {
+	return nil
+}
+
+func (*MailList) Stop() error {
+	return nil
 }
 
 func (m *MailList) Mount(r platform.Router) {
