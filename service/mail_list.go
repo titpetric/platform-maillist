@@ -7,7 +7,9 @@ import (
 	"github.com/titpetric/platform"
 )
 
-type MailList struct{}
+type MailList struct {
+	platform.UnimplementedModule
+}
 
 func NewMailList() *MailList {
 	return &MailList{}
@@ -17,19 +19,12 @@ func (*MailList) Name() string {
 	return "maillist"
 }
 
-func (*MailList) Start() error {
-	return nil
-}
-
-func (*MailList) Stop() error {
-	return nil
-}
-
-func (m *MailList) Mount(r platform.Router) {
+func (m *MailList) Mount(r platform.Router) error {
 	r.Route("/maillist", func(r platform.Router) {
 		r.Get("/", m.Index)
 		r.Post("/create", m.Create)
 	})
+	return nil
 }
 
 func (m *MailList) Index(w http.ResponseWriter, r *http.Request) {
