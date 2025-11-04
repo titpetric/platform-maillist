@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"embed"
 	"io/fs"
 	"path"
@@ -13,7 +14,9 @@ import (
 var schema embed.FS
 
 func Migrate() error {
-	db, err := service.DB()
+	ctx := context.Background()
+
+	db, err := service.DB(ctx)
 	if err != nil {
 		return err
 	}

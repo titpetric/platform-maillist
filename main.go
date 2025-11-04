@@ -1,36 +1,28 @@
 package main
 
 import (
-	"log"
+	"context"
 
 	"github.com/go-chi/chi/v5/middleware"
 
 	"github.com/titpetric/platform"
+	"github.com/titpetric/platform/cmd"
+	"github.com/titpetric/platform/pkg/telemetry"
 
-	_ "github.com/go-sql-driver/mysql"
-	_ "github.com/jackc/pgx/v5/stdlib"
-	_ "modernc.org/sqlite"
-
-	_ "github.com/titpetric/platform/module/autoload"
+	_ "github.com/titpetric/platform-app/autoload"
 
 	"github.com/titpetric/platform-maillist/service"
 )
 
 func main() {
-	// Register common middleware.
-	platform.Use(middleware.Logger)
+	ctx := context.Background()
 
+	platform.Use(middleware.Logger)
 	platform.Register(service.NewMailList())
 
-	if err := start(); err != nil {
-		log.Fatalf("exit error: %v", err)
-	}
-}
-
-func start() error {
 	if err := Migrate(); err != nil {
-		return err
+		telemetry.Fatal(ctx, err)
 	}
 
-	return platform.Start()
+	cmd.Main(ctx)
 }

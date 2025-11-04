@@ -1,6 +1,9 @@
 # Maillist
 
-This is an example of using the platform to provide a maillist module.
+This is an example platform application.
+
+## About
+
 While the module isn't implemented, this demonstrates structure, and
 handles some typical concerns for modules like migrating SQL schema.
 
@@ -21,5 +24,7 @@ different connection, as defined in Taskfile.yml.
 This allows the maillist project to work on maillist schema, while
 integrating with the platform for database access and authentication.
 
-The app uses [go-bridget/mig](https://github/go-bridget/mig) to provide
-SQL migration functionality.
+## Integrations
+
+- [titpetric/platform-app](https://github.com/titpetric/platform-app) - A `user` module bringing in a user system
+- [go-bridget/mig](https://github.com/go-bridget/mig) - SQL migration functionality

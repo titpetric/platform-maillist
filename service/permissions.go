@@ -3,7 +3,7 @@ package service
 import (
 	"net/http"
 
-	"github.com/titpetric/platform/module/user"
+	"github.com/titpetric/platform-app/modules/user"
 )
 
 type Permissions struct {
