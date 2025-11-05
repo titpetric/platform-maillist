@@ -7,6 +7,7 @@ import (
 	"path"
 
 	"github.com/go-bridget/mig/migrate"
+
 	"github.com/titpetric/platform-maillist/service"
 )
 
